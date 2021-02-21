@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: javax.servlet:servlet-api:2.5"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: jstl:jstl:1.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: javax.servlet:jstl:1.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: javax.servlet:jsp-api:2.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: mysql:mysql-connector-java:8.0.21"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: com.google.protobuf:protobuf-java:3.11.4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: javax.servlet:javax.servlet-api:4.0.1"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
