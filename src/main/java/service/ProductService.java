@@ -2,6 +2,7 @@ package service;
 
 import entity.Product;
 
+import java.awt.*;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -12,4 +13,5 @@ public interface ProductService {
     Product getDetailProduct(int id) throws ClassNotFoundException,SQLException;
     List<Product> getProductSearched(String text) throws ClassNotFoundException,SQLException;
     List<Product> getProductBySellerID(int id) throws  ClassNotFoundException,SQLException;
+    List<Product> getProductEachPage(int index) throws ClassNotFoundException,SQLException;
 }

@@ -105,11 +105,47 @@ public class ProductDaoImpl implements ProductDao {
         return list;
     }
 
+    @Override
+    public List<Product> getProductEachPage(int index) throws SQLException, ClassNotFoundException {
+        List<Product> list= new ArrayList<>();
+        Connection connection=myConnection.connectDb();
+        PreparedStatement preparedStatement=connection.prepareStatement("SELECT * from `product2` order by `id` limit 10 \n" +
+                " offset ?;\n");
+        preparedStatement.setInt(1,(index-1)*10);
+        ResultSet resultSet=preparedStatement.executeQuery();
+        while(resultSet.next()){
+            Product product= new Product(resultSet.getInt("id"),resultSet.getString("name"),
+                    resultSet.getString("ratio"),resultSet.getDouble("price"),resultSet.getString("description"),
+                    resultSet.getString("image"));
+            list.add(product);
+        }
+        return list;
+    }
+
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
         ProductService productService= new ProductServiceImpl();
-        System.out.println(productService.findAllProduct());
-        System.out.println(productService.getNewestProduct());
-        System.out.println(productService.getListProductByBrandID(1));
-        System.out.println(productService.getProductSearched("VIOS"));
+//        System.out.println(productService.findAllProduct());
+//        System.out.println(productService.getNewestProduct());
+//        System.out.println(productService.getListProductByBrandID(1));
+//        System.out.println(productService.getProductSearched("VIOS"));
+        System.out.println(productService.getProductEachPage(1).get(1).getId());
+    }
+
+    public int numberPage() throws SQLException, ClassNotFoundException {
+        Connection connection= myConnection.connectDb();
+        int count=0;
+        PreparedStatement preparedStatement=connection.prepareStatement("select count(*) from product2");
+        ResultSet rs= preparedStatement.executeQuery();
+        while(rs.next()){
+             count =rs.getInt(1);
+
+        }
+         int numberPage = count / 10;
+         if(count%10!=0){
+             numberPage++;
+         }
+         return numberPage;
+
+
     }
 }

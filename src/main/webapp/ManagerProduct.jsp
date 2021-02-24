@@ -80,18 +80,16 @@
             </c:forEach>
             </tbody>
         </table>
-        <div class="clearfix">
-            <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
-            <ul class="pagination">
-                <li class="page-item disabled"><a href="#">Previous</a></li>
-                <li class="page-item"><a href="#" class="page-link">1</a></li>
-                <li class="page-item"><a href="#" class="page-link">2</a></li>
-                <li class="page-item active"><a href="#" class="page-link">3</a></li>
-                <li class="page-item"><a href="#" class="page-link">4</a></li>
-                <li class="page-item"><a href="#" class="page-link">5</a></li>
-                <li class="page-item"><a href="#" class="page-link">Next</a></li>
-            </ul>
-        </div>
+<%--        <div class="clearfix">--%>
+<%--            <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>--%>
+<%--            <ul class="pagination pagination-lg">--%>
+<%--                <c:forEach begin="1" end="${count}" var="i">--%>
+<%--                    <li class="page-item active"><a href="page?index=${i}" class="page-link">${i}</a></li>--%>
+<%--                </c:forEach>--%>
+
+<%--               --%>
+<%--            </ul>--%>
+<%--        </div>--%>
     </div>
     <a href="home"><button type="button" class="btn btn-primary">Back to home</button>
     </a>

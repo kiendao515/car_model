@@ -1,6 +1,7 @@
 package control;
 
 import dao.ProductDao;
+import dao_impl.ProductDaoImpl;
 import entity.Category;
 import entity.Product;
 import service.CategoryService;
@@ -28,13 +29,21 @@ public class HomeControl extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
+            String id=request.getParameter("id");
+            if(id==null){
+                id="1";
+            }
             List<Product> productList= productService.findAllProduct();// get data from dao
             List<Category> listC=categoryService.findAllProduct();
             Product newestProduct = productService.getNewestProduct();
+            ProductDaoImpl productDao= new ProductDaoImpl();
+            List<Product> list=productService.getProductEachPage(Integer.parseInt(id));// get product from dao with paging split
+            int count= productDao.numberPage();
+            request.setAttribute("count",count);
 //            System.out.println(list);
             // set data to jsp
             response.setContentType("text/html;charset=UTF-8");
-            request.setAttribute("listProduct",productList);
+            request.setAttribute("listProduct",list);
             request.setAttribute("listCategory",listC);
             request.setAttribute("newestProduct",newestProduct);
 //            response.getWriter().println(list.toString());

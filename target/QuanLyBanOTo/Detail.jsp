@@ -101,8 +101,8 @@
 
                                 </div> <!-- row.// -->
                                 <hr>
-                                <a href="#" class="btn btn-lg btn-primary text-uppercase"> Buy now </a>
-                                <a href="#" class="btn btn-lg btn-outline-primary text-uppercase"> <i class="fas fa-shopping-cart"></i> Add to cart </a>
+                                <a href="addtocart?id=${detail.id}" class="btn btn-lg btn-primary text-uppercase"> Buy now </a>
+                                <a href="addtocart?id=${detail.id}" class="btn btn-lg btn-outline-primary text-uppercase"> <i class="fas fa-shopping-cart"></i> Add to cart </a>
                             </article> <!-- card-body.// -->
                         </aside> <!-- col.// -->
                     </div> <!-- row.// -->

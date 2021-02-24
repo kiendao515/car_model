@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -45,23 +46,23 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <c:forEach begin="1" end="3" var="o">
+                                <c:forEach items="${order.items}" var="o">
                                     <tr>
                                         <th scope="row">
                                             <div class="p-2">
-                                                <img src="https://canary.contestimg.wish.com/api/webimage/5da3d0b594a0f07fdec6c5ac-large.jpg?cache_buster=a2471ea62eba44e7c0b0f4d2b4c64681" alt="" width="70" class="img-fluid rounded shadow-sm">
+                                                <img src="${o.product.image}" alt="" width="70" class="img-fluid rounded shadow-sm">
                                                 <div class="ml-3 d-inline-block align-middle">
-                                                    <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block">Winter Men's Snow Boots Plus Velvet</a></h5><span class="text-muted font-weight-normal font-italic"></span>
+                                                    <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block">${o.product.name}</a></h5><span class="text-muted font-weight-normal font-italic"></span>
                                                 </div>
                                             </div>
                                         </th>
-                                        <td class="align-middle"><strong>100</strong></td>
+                                        <td class="align-middle"><strong>${o.price}</strong></td>
                                         <td class="align-middle">
-                                            <a href="#"><button class="btnSub">-</button></a>
-                                            <strong>1</strong>
-                                            <a href="#"><button class="btnAdd">+</button></a>
+                                            <a href="sub?id=${o.product.id}"><button class="btnSub">-</button></a>
+                                            <strong>${o.quantity}</strong>
+                                            <a href="add-more?id=${o.product.id}"><button class="btnAdd">+</button></a>
                                         </td>
-                                        <td class="align-middle"><a href="#" class="text-dark">
+                                        <td class="align-middle"><a href="remove?id=${o.product.id}" class="text-dark">
                                             <button type="button" class="btn btn-danger">Delete</button>
                                         </a>
                                         </td>
@@ -90,11 +91,11 @@
                         <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Thành tiền</div>
                         <div class="p-4">
                             <ul class="list-unstyled mb-4">
-                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tổng tiền hàng</strong><strong>100 $</strong></li>
-                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Phí vận chuyển</strong><strong>Free ship</strong></li>
-                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">VAT</strong><strong>10 $</strong></li>
+                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tổng tiền hàng</strong><strong>${total} VND</strong></li>
+                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Phí vận chuyển</strong><strong>20000 VND</strong></li>
+                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">VAT</strong><strong>0 VND</strong></li>
                                 <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tổng thanh toán</strong>
-                                    <h5 class="font-weight-bold">110 $</h5>
+                                    <h5 class="font-weight-bold">${sum}</h5>
                                 </li>
                             </ul><a href="buy" class="btn btn-dark rounded-pill py-2 btn-block">Mua hàng</a>
                         </div>

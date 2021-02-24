@@ -1,5 +1,7 @@
 package control;
 
+import dao.ProductDao;
+import dao_impl.ProductDaoImpl;
 import entity.Account;
 import entity.Category;
 import entity.Product;

@@ -19,4 +19,5 @@ public interface ProductDao {
     List<Product> getProductSearched(String text) throws SQLException,ClassNotFoundException;
 
     List<Product> getProductBySellerID(int id) throws SQLException,ClassNotFoundException;
+    List<Product> getProductEachPage(int index) throws SQLException,ClassNotFoundException;
 }
