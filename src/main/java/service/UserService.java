@@ -14,4 +14,6 @@ public interface UserService {
             throws SQLException,ClassNotFoundException;
     void updateProduct(String name,String ratio,double price,String image,int brandID,String description,int id)
             throws SQLException,ClassNotFoundException;
+
+    void insertOrder(String orderID,String name,String tel,String address) throws SQLException,ClassNotFoundException;
 }

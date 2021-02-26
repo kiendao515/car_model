@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 @WebServlet(name = "CartServlet",urlPatterns = "/addtocart")
 public class CartServlet extends HttpServlet {
@@ -36,6 +37,7 @@ public class CartServlet extends HttpServlet {
                     HttpSession session=request.getSession();
                     if(session.getAttribute("order")==null){
                         Order order= new Order();
+                        order.setId(UUID.randomUUID().toString());
                         List<Item> list=new ArrayList<>();
                         Item item= new Item();
                         item.setQuantity(quantity);
@@ -52,6 +54,7 @@ public class CartServlet extends HttpServlet {
                         }
                     }else {
                         Order order=(Order) session.getAttribute("order");
+                        order.setId(UUID.randomUUID().toString());
                         List<Item> list=order.getItems();
                         boolean check =false;
 

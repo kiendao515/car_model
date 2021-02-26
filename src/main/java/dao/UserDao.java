@@ -17,4 +17,7 @@ public interface UserDao {
 
     void updateProduct(String name,String ratio,double price,String image,int brandID,String description,int sellerID)
             throws SQLException,ClassNotFoundException;
+
+    void insertOrder(String orderID,String name,String tel,String address) throws SQLException,ClassNotFoundException;
+
 }

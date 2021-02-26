@@ -120,12 +120,10 @@
                         <label>Title</label>
 <%--                        <textarea name="title" class="form-control" required></textarea>--%>
                         <select name="ratio" class="form-select" aria-label="Default select example">
-                            <c:forEach begin="1" end="3" var="o">
                                 <option value="1:18">1:18</option>
                                 <option value="1:24">1:24</option>
                                 <option value="1:18">1:64</option>
                                 <option value="1:32">1:32</option>
-                            </c:forEach>
                         </select>
                     </div>
                     <div class="form-group">

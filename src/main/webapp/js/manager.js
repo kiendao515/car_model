@@ -2,6 +2,10 @@ $(document).ready(function () {
     // Activate tooltip
     $('[data-toggle="tooltip"]').tooltip();
 
+    $('a[href$="#addNewOrder"]').on( "click", function() {
+        $('#addNewOrder').modal('show');
+    });
+
     // Select/Deselect checkboxes
     var checkbox = $('table tbody input[type="checkbox"]');
     $("#selectAll").click(function () {

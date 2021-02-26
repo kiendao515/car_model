@@ -18,7 +18,7 @@ public class CategoryDaoImpl implements CategoryDao {
     public List<Category> getAllProduct() throws SQLException, ClassNotFoundException {
         List<Category> list = new ArrayList<>();
         Connection connection=myConnection.connectDb();
-        PreparedStatement preparedStatement =connection.prepareStatement("select * from brand");
+        PreparedStatement preparedStatement =connection.prepareStatement("select * from brand order by name asc");
         ResultSet resultSet=preparedStatement.executeQuery();
         while(resultSet.next()){
             Category category= new Category(resultSet.getInt("id"),resultSet.getString("name"));

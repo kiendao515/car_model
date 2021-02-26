@@ -4,26 +4,23 @@ import java.io.Serializable;
 import java.util.List;
 
 public class Order implements Serializable {
-    private int id;
+    private String id;
     private Account customer;
     List<Item> items;
     private int status;
 
-    @Override
-    public String toString() {
-        return "Order{" +
-                "id=" + id +
-                ", customer=" + customer +
-                ", items=" + items +
-                ", status=" + status +
-                '}';
+    public Order(String id, Account customer, List<Item> items, int status) {
+        this.id = id;
+        this.customer = customer;
+        this.items = items;
+        this.status = status;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -54,10 +51,13 @@ public class Order implements Serializable {
     public Order() {
     }
 
-    public Order(int id, Account customer, List<Item> items, int status) {
-        this.id = id;
-        this.customer = customer;
-        this.items = items;
-        this.status = status;
+    @Override
+    public String toString() {
+        return "Order{" +
+                "id='" + id + '\'' +
+                ", customer=" + customer +
+                ", items=" + items +
+                ", status=" + status +
+                '}';
     }
 }

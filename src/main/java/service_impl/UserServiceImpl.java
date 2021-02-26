@@ -41,6 +41,11 @@ public class UserServiceImpl implements UserService {
         userDao.updateProduct(name,ratio,price,image,brandID,description,id);
     }
 
+    @Override
+    public void insertOrder(String orderID, String name, String tel, String address) throws SQLException, ClassNotFoundException {
+        userDao.insertOrder(orderID,name,tel,address);
+    }
+
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
         ProductService productService= new ProductServiceImpl();
         System.out.println(productService.getProductBySellerID(1));

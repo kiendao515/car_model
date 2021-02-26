@@ -97,7 +97,7 @@
                                 <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tổng thanh toán</strong>
                                     <h5 class="font-weight-bold">${sum}</h5>
                                 </li>
-                            </ul><a href="buy" class="btn btn-dark rounded-pill py-2 btn-block">Mua hàng</a>
+                            </ul><a href="#addNewOrder" class="btn btn-dark rounded-pill py-2 btn-block" data-toggle="modal">Mua hàng</a>
                         </div>
                     </div>
                 </div>
@@ -106,10 +106,41 @@
         </div>
     </div>
 </div>
+<div id="addNewOrder" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form action="client" method="post">
+                <div class="modal-header">
+                    <h4 class="modal-title">Add New Order</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input name="name" type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Your tel</label>
+                        <input name="tel" type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Your address</label>
+                        <textarea name="address" class="form-control" required></textarea>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                    <input href="" type="submit" class="btn btn-success" value="Confirm">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
-
+<script src="js/manager.js" type="text/javascript"></script>
 </html>
 </html>

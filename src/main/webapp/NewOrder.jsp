@@ -32,36 +32,24 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label>ID</label>
-                        <input name="id" type="text" value="${detail.id}" class="form-control" readonly required>
+                        <input name="id" type="text" value="${orderID}" class="form-control" readonly required>
                     </div> <div class="form-group">
                     <label>Name</label>
-                    <input name="name" type="text" value="${detail.name}" class="form-control"  required>
+                    <input name="name" type="text" value="" class="form-control"  required>
                 </div>
                     <div class="form-group">
-                        <label>Image</label>
-                        <input name="image" type="text"  value="${detail.image}" class="form-control" required>
+                        <label>Tel</label>
+                        <input name="tel" type="text"  value="" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <label>Price</label>
-                        <input name="price" type="text" value="${detail.price}" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label></label>
-                        <textarea name="description" class="form-control" required>${detail.description}</textarea>
-                    </div>
-                    <div class="form-group">
-                        <label>Category</label>
-                        <select name="category" class="form-select" aria-label="Default select example">
-                            <c:forEach items="${listCategory}" var="o">
-                                <option value="${o.id}">${o.name}</option>
-                            </c:forEach>
-                        </select>
+                        <label>Address</label>
+                        <textarea name="address" class="form-control" required></textarea>
                     </div>
 
                 </div>
                 <div class="modal-footer">
                     <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                    <input type="submit" class="btn btn-info" value="Save">
+                    <input type="submit" class="btn btn-info" value="Confirm">
                 </div>
             </form>
         </div>

@@ -10,6 +10,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.UUID;
 
 public class UserDaoImpl implements UserDao {
     MyConnection myConnection= new MyConnection();
@@ -97,6 +98,19 @@ public class UserDaoImpl implements UserDao {
         }
     }
 
+    @Override
+    public void insertOrder(String orderID, String name, String tel, String address) throws SQLException, ClassNotFoundException {
+        Connection connection= myConnection.connectDb();
+        PreparedStatement preparedStatemen=connection.prepareStatement("insert into order2(orderID,name,tel,address) values(?,?,?,?)");
+        preparedStatemen.setString(1,orderID);
+        preparedStatemen.setString(2,name);
+        preparedStatemen.setString(3,tel);
+        preparedStatemen.setString(4,address);
+        if(preparedStatemen.executeUpdate()!=0){
+            System.out.println("insert thành công !!");
+        }
+    }
+
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
         UserDao userDao= new UserDaoImpl();
         UserService userService= new UserServiceImpl();
@@ -104,6 +118,8 @@ public class UserDaoImpl implements UserDao {
         System.out.println("--");
         System.out.println(userService.getAccount("kiendao","kiendao2001"));
         System.out.println(userService.checkUserExist("kiendao"));
+        String uniqueID = UUID.randomUUID().toString();
+        System.out.println(uniqueID);
 //        System.out.println(userService.updateProduct("a","1:12","100","sh","1","shs",1));
 //        userService.register("admin","kiendao2001","daotrungkien515@gmail.com");
     }
