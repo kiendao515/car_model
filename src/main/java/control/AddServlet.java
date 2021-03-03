@@ -22,7 +22,7 @@ public class AddServlet extends HttpServlet {
         UserService userService= new UserServiceImpl();
         String name=request.getParameter("name");
         String image=request.getParameter("image");
-        double price= Double.parseDouble(request.getParameter("price"));
+        String price=(request.getParameter("price"));
         String ratio=request.getParameter("ratio");
         String description=request.getParameter("description");
         int categoryID= Integer.parseInt(request.getParameter("category"));

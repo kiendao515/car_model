@@ -24,12 +24,14 @@ public class EditServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+        request.setCharacterEncoding("UTF-8");
         ProductService productService= new ProductServiceImpl();
         CategoryService categoryService= new CategoryServiceImpl();
         request.setCharacterEncoding("UTF-8");
         int productID= Integer.parseInt(request.getParameter("id"));
         try {
             Product product= productService.getDetailProduct(productID);
+            product.setPrice(product.getPrice().replaceAll("[^\\d.]", "").replace(".",""));
             List<Category> listC=categoryService.findAllProduct();
             request.setAttribute("listCategory",listC);
             request.setAttribute("detail",product);

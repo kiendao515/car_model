@@ -49,7 +49,7 @@
                                 <p class="card-text show_txt"><c:out value="Tỉ lệ: ${listProduct.category}"></c:out></p>
                                 <div class="row">
                                     <div class="col">
-                                        <p class="btn btn-danger btn-block">${listProduct.price} VND</p>
+                                        <p class="btn btn-danger btn-block">${listProduct.price}</p>
                                     </div>
                                     <div class="col">
                                         <a href="addtocart?id=${listProduct.id}" class="btn btn-success btn-block">Add to cart</a>

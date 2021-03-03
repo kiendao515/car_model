@@ -24,7 +24,7 @@ public class ProductDaoImpl implements ProductDao {
         ResultSet resultSet=preparedStatement.executeQuery();
         while(resultSet.next()){
             Product product= new Product(resultSet.getInt("id"),resultSet.getString("name"),
-                    resultSet.getString("ratio"),resultSet.getDouble("price"),resultSet.getString("description"),
+                    resultSet.getString("ratio"),resultSet.getString("price"),resultSet.getString("description"),
                     resultSet.getString("image"));
             list.add(product);
         }
@@ -39,7 +39,7 @@ public class ProductDaoImpl implements ProductDao {
         ResultSet resultSet=preparedStatement.executeQuery();
         while(resultSet.next()){
             product= new Product(resultSet.getInt("id"),resultSet.getString("name"),
-                    resultSet.getString("ratio"), resultSet.getDouble("price"),
+                    resultSet.getString("ratio"), resultSet.getString("price"),
                     resultSet.getString("description"),
                     resultSet.getString("image"));
         }
@@ -55,7 +55,7 @@ public class ProductDaoImpl implements ProductDao {
         ResultSet rs= preparedStatement.executeQuery();
         while(rs.next()){
             Product product = new Product(rs.getInt("id"),rs.getString("name"),rs.getString("ratio")
-                    ,rs.getDouble("price"),rs.getString("description"),rs.getString("image"));
+                    ,rs.getString("price"),rs.getString("description"),rs.getString("image"));
             list.add(product);
         }
         return list;
@@ -70,7 +70,7 @@ public class ProductDaoImpl implements ProductDao {
         ResultSet rs=preparedStatement.executeQuery();
         while(rs.next()){
             product= new Product(rs.getInt(1),rs.getString(2),rs.getString(3)
-                    ,rs.getDouble(4),rs.getString(7),rs.getString(5));
+                    ,rs.getString(4),rs.getString(7),rs.getString(5));
         }
         return product;
     }
@@ -84,7 +84,7 @@ public class ProductDaoImpl implements ProductDao {
         ResultSet rs= preparedStatement.executeQuery();
         while(rs.next()){
             Product product = new Product(rs.getInt(1),rs.getString(2),rs.getString(3)
-                    ,rs.getDouble(4),rs.getString(7),rs.getString(5));
+                    ,rs.getString(4),rs.getString(7),rs.getString(5));
             list.add(product);
         }
         return list;
@@ -99,7 +99,7 @@ public class ProductDaoImpl implements ProductDao {
         ResultSet rs= preparedStatement.executeQuery();
         while(rs.next()){
             Product product = new Product(rs.getInt(1),rs.getString(2),rs.getString(3)
-                    ,rs.getDouble(4),rs.getString(7),rs.getString(5));
+                    ,rs.getString(4),rs.getString(7),rs.getString(5));
             list.add(product);
         }
         return list;
@@ -115,7 +115,7 @@ public class ProductDaoImpl implements ProductDao {
         ResultSet resultSet=preparedStatement.executeQuery();
         while(resultSet.next()){
             Product product= new Product(resultSet.getInt("id"),resultSet.getString("name"),
-                    resultSet.getString("ratio"),resultSet.getDouble("price"),resultSet.getString("description"),
+                    resultSet.getString("ratio"),resultSet.getString("price"),resultSet.getString("description"),
                     resultSet.getString("image"));
             list.add(product);
         }
@@ -129,6 +129,8 @@ public class ProductDaoImpl implements ProductDao {
 //        System.out.println(productService.getListProductByBrandID(1));
 //        System.out.println(productService.getProductSearched("VIOS"));
         System.out.println(productService.getProductEachPage(1).get(1).getId());
+        System.out.println(productService.getDetailProduct(2));
+        System.out.println(productService.getDetailProduct(2).getPrice().replace(" ₫","").replace(".",""));
     }
 
     public int numberPage() throws SQLException, ClassNotFoundException {

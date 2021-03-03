@@ -28,6 +28,7 @@ public class ManagerServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
       response.setContentType("text/html;charset=UTF-8");
+        request.setCharacterEncoding("UTF-8");
         HttpSession session= request.getSession();
         Account account=(Account) session.getAttribute("acc");
         int id=account.getId();// id cua user

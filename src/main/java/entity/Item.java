@@ -6,7 +6,7 @@ public class Item implements Serializable {
     private int id;
     private Product product;
     private int quantity;
-    private double price;
+    private String price;
 
     public Item() {
 
@@ -18,11 +18,11 @@ public class Item implements Serializable {
                 "id=" + id +
                 ", product=" + product +
                 ", quantity=" + quantity +
-                ", price=" + price +
+                ", price='" + price + '\'' +
                 '}';
     }
 
-    public Item(int id, Product product, int quantity, double price) {
+    public Item(int id, Product product, int quantity, String price) {
         this.id = id;
         this.product = product;
         this.quantity = quantity;
@@ -53,11 +53,11 @@ public class Item implements Serializable {
         this.quantity = quantity;
     }
 
-    public double getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 }

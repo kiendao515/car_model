@@ -21,14 +21,13 @@ import java.sql.SQLException;
 public class SaveServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        ProductService productService= new ProductServiceImpl();
-        CategoryService categoryService= new CategoryServiceImpl();
+        request.setCharacterEncoding("UTF-8");
         UserService userService= new UserServiceImpl();
         request.setCharacterEncoding("UTF-8");
         int id= Integer.parseInt(request.getParameter("id"));
         String name=request.getParameter("name");
         String image=request.getParameter("image");
-        double price= Double.parseDouble(request.getParameter("price"));
+        String price=(request.getParameter("price")).replaceAll("[^\\d.]", "").replace(".","");
         String ratio=request.getParameter("ratio");
         String description=request.getParameter("description");
         int categoryID= Integer.parseInt(request.getParameter("category"));

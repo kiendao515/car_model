@@ -12,10 +12,10 @@ public interface UserDao {
 
     void deleteProduct(int id) throws SQLException,ClassNotFoundException;
 //    void editProduct(Product product) throws SQLException,ClassNotFoundException;
-    void insertProduct(String name,String ratio,double price,String image,int brandID,String description,int sellerID)
+    void insertProduct(String name,String ratio,String price,String image,int brandID,String description,int sellerID)
     throws SQLException,ClassNotFoundException;
 
-    void updateProduct(String name,String ratio,double price,String image,int brandID,String description,int sellerID)
+    void updateProduct(String name,String ratio,String price,String image,int brandID,String description,int sellerID)
             throws SQLException,ClassNotFoundException;
 
     void insertOrder(String orderID,String name,String tel,String address) throws SQLException,ClassNotFoundException;

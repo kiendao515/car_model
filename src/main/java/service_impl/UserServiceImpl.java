@@ -31,13 +31,13 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void insertProduct(String name, String ratio, double price, String image, int brandID, String description, int sellerID)
+    public void insertProduct(String name, String ratio, String price, String image, int brandID, String description, int sellerID)
             throws SQLException, ClassNotFoundException {
          userDao.insertProduct(name,ratio,price,image,brandID,description,sellerID);
     }
 
     @Override
-    public void updateProduct(String name, String ratio, double price, String image, int brandID, String description, int id) throws SQLException, ClassNotFoundException {
+    public void updateProduct(String name, String ratio, String price, String image, int brandID, String description, int id) throws SQLException, ClassNotFoundException {
         userDao.updateProduct(name,ratio,price,image,brandID,description,id);
     }
 

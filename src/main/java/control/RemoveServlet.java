@@ -11,9 +11,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Locale;
 
 @WebServlet(name = "RemoveServlet",urlPatterns = "/remove")
 public class RemoveServlet extends HttpServlet {
@@ -35,6 +37,7 @@ public class RemoveServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         HttpSession session = request.getSession();
         double price =0;
+        String price2=null;
         try {
             if(session!=null){
                 Order order =(Order) session.getAttribute("order");
@@ -46,10 +49,11 @@ public class RemoveServlet extends HttpServlet {
 
                 // tinh lai tien
                 for(Item item:list){
-                    price= price+ item.getPrice()* item.getQuantity();
+                    price= price+ Double.parseDouble(item.getPrice())* item.getQuantity();
+                    price2= NumberFormat.getCurrencyInstance(new Locale("vi", "VN")).format(price);
                 }
             }
-            request.setAttribute("total",price);
+            request.setAttribute("total",price2);
             if(session.getAttribute("order").equals(null)){
                 request.setAttribute("sum",0);
             }else {

@@ -34,5 +34,7 @@ public class CategoryDaoImpl implements CategoryDao {
         for (Category c:list) {
             System.out.println(c.getName());
         }
+        String x="975000Â â‚«";
+        System.out.println((x.replace("Â â‚«","").replace(".","")));
     }
 }

@@ -10,6 +10,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.NumberFormat;
+import java.util.Locale;
 import java.util.UUID;
 
 public class UserDaoImpl implements UserDao {
@@ -64,14 +66,14 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public void insertProduct(String name, String ratio, double price, String image, int brandID, String description, int sellerID)
+    public void insertProduct(String name, String ratio, String price, String image, int brandID, String description, int sellerID)
             throws SQLException, ClassNotFoundException {
         Connection connection=myConnection.connectDb();
         PreparedStatement preparedStatement=connection.prepareStatement("insert into product2(name,ratio,price,image,brandID," +
                 "description,sellerID) values (?,?,?,?,?,?,?)");
         preparedStatement.setString(1,name);
         preparedStatement.setString(2,ratio);
-        preparedStatement.setDouble(3,price);
+        preparedStatement.setString(3,(NumberFormat.getCurrencyInstance(new Locale("vi","VN")).format(Double.parseDouble(price))));
         preparedStatement.setString(4,image);
         preparedStatement.setInt(5,brandID);
         preparedStatement.setString(6,description);
@@ -82,13 +84,13 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public void updateProduct(String name, String ratio, double price, String image, int brandID, String description,int id) throws SQLException, ClassNotFoundException {
+    public void updateProduct(String name, String ratio, String price, String image, int brandID, String description,int id) throws SQLException, ClassNotFoundException {
         Connection connection=myConnection.connectDb();
         PreparedStatement preparedStatement=connection.prepareStatement("update product2 set name=?,ratio=?,price=?,image=?,brandID=?,description=?" +
                         "where id=?");
         preparedStatement.setString(1,name);
         preparedStatement.setString(2,ratio);
-        preparedStatement.setDouble(3,price);
+        preparedStatement.setString(3,(NumberFormat.getCurrencyInstance(new Locale("vi","VN")).format(Double.parseDouble(price))));
         preparedStatement.setString(4,image);
         preparedStatement.setInt(5,brandID);
         preparedStatement.setString(6,description);
@@ -120,6 +122,8 @@ public class UserDaoImpl implements UserDao {
         System.out.println(userService.checkUserExist("kiendao"));
         String uniqueID = UUID.randomUUID().toString();
         System.out.println(uniqueID);
+
+        System.out.println( NumberFormat.getCurrencyInstance(new Locale("vi","VN")).format(10000));
 //        System.out.println(userService.updateProduct("a","1:12","100","sh","1","shs",1));
 //        userService.register("admin","kiendao2001","daotrungkien515@gmail.com");
     }

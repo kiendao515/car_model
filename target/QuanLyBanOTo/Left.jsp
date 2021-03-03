@@ -23,7 +23,7 @@
             <img class="img-fluid" src="${newestProduct.image}" />
 <%--            <h5 class="card-title">${newestProduct.des}</h5>--%>
             <p class="card-text" ><a href="detail?id=${newestProduct.id}">${newestProduct.name}</a></p>
-            <p class="bloc_left_price">${newestProduct.price} VND</p>
+            <p class="bloc_left_price">${newestProduct.price}</p>
         </div>
     </div>
 </div>

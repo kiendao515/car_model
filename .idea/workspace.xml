@@ -7,35 +7,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="855f1ef7-6ca6-4ef2-a2ae-dbd6208a9796" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/control/AddOrderServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/NewOrder.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/control/AddButtonServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/AddButtonServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/control/AddServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/AddServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/control/CartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/CartServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/control/DetailServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/DetailServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/control/EditServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/EditServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/control/HomeControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/HomeControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/control/LoadProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/LoadProductServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/control/ManagerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/ManagerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/control/RemoveServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/RemoveServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/control/SaveServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/SaveServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao_impl/CategoryDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao_impl/CategoryDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao_impl/ProductDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao_impl/ProductDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao_impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao_impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service_impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service_impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/Cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Cart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ManagerProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ManagerProduct.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Left.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Left.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/QuanLyBanOTo.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuanLyBanOTo.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/QuanLyBanOTo/Cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuanLyBanOTo/Cart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuanLyBanOTo/ManagerProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuanLyBanOTo/ManagerProduct.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/QuanLyBanOTo/Detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuanLyBanOTo/Detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/QuanLyBanOTo/Home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuanLyBanOTo/Home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/QuanLyBanOTo/Left.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuanLyBanOTo/Left.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/control/AddButtonServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/control/AddButtonServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/control/AddServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/control/AddServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/control/CartServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/control/CartServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/control/DetailServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/control/DetailServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/control/EditServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/control/EditServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/control/HomeControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/control/HomeControl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/control/LoadProductServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/control/LoadProductServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/control/ManagerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/control/ManagerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/control/RemoveServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/control/RemoveServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/control/SaveServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/control/SaveServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/dao_impl/CategoryDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/dao_impl/CategoryDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/dao_impl/ProductDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/dao_impl/ProductDaoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/dao_impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/dao_impl/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/entity/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/entity/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/entity/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/service_impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuanLyBanOTo/WEB-INF/classes/service_impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QuanLyBanOTo/js/manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QuanLyBanOTo/js/manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/control/AddButtonServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/control/AddButtonServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/control/AddServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/control/AddServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/control/CartServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/control/CartServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/control/DetailServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/control/DetailServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/control/EditServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/control/EditServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/control/HomeControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/control/HomeControl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/control/LoadProductServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/control/LoadProductServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/control/ManagerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/control/ManagerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/control/RemoveServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/control/RemoveServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/control/SaveServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/control/SaveServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/UserDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/dao_impl/CategoryDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao_impl/CategoryDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao_impl/ProductDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao_impl/ProductDaoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/dao_impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao_impl/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service_impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service_impl/UserServiceImpl.class" afterDir="false" />
     </list>
@@ -81,7 +116,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../thiet_bi_dien_servlet_jw11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../thiet_bi_dien_jw11" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -95,6 +130,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="control.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CategoryDaoImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dao_impl.CategoryDaoImpl" />
+      <module name="QuanLyBanOTo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao_impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,45 +187,6 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Cart_jsp_QuanLyBanOTo" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="QuanLyBanOTo:war" />
-        </option>
-      </method>
-    </configuration>
-    <configuration name="Edit.jsp (1)" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.39" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Edit.jsp" />
-      <deployment>
-        <artifact name="QuanLyBanOTo:war">
-          <settings>
-            <option name="CONTEXT_PATH" value="/QuanLyBanOTo_war" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Edit_jsp_(1)_QuanLyBanOTo" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -281,19 +290,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ProductDaoImpl" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.39" />
-      <item itemvalue="Tomcat Server.Edit.jsp (1)" />
-      <item itemvalue="Tomcat Server.Cart.jsp" />
       <item itemvalue="Application.AddServlet" />
       <item itemvalue="Application.UserDaoImpl" />
+      <item itemvalue="Application.CategoryDaoImpl" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.39" />
+      <item itemvalue="Tomcat Server.Cart.jsp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProductDaoImpl" />
+        <item itemvalue="Application.CategoryDaoImpl" />
         <item itemvalue="Application.UserDaoImpl" />
         <item itemvalue="Application.AddServlet" />
-        <item itemvalue="Application.ProductDaoImpl" />
         <item itemvalue="Tomcat Server.Cart.jsp" />
-        <item itemvalue="Tomcat Server.Edit.jsp (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -348,7 +357,12 @@
       <workItem from="1614127734533" duration="23896000" />
       <workItem from="1614218398336" duration="5329000" />
       <workItem from="1614242949824" duration="10806000" />
-      <workItem from="1614313714809" duration="6153000" />
+      <workItem from="1614313714809" duration="6447000" />
+      <workItem from="1614399297487" duration="2529000" />
+      <workItem from="1614502060147" duration="14411000" />
+      <workItem from="1614564064930" duration="2329000" />
+      <workItem from="1614659069587" duration="1399000" />
+      <workItem from="1614729212045" duration="2999000" />
     </task>
     <servers />
   </component>
@@ -371,10 +385,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="517" y="250" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1536.824@0.0.1536.824" timestamp="1613880271427" />
-    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser" timestamp="1614330368544">
+    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser" timestamp="1614519114876">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1614330368544" />
+    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1614519114876" />
     <state x="499" y="198" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1613493796190">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -387,66 +401,66 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1613616829890" />
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1613897607818">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1614527680976">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1613897607818" />
-    <state width="1228" height="340" key="GridCell.Tab.0.bottom" timestamp="1614331970285">
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1614527680976" />
+    <state width="1228" height="372" key="GridCell.Tab.0.bottom" timestamp="1614700911505">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1228" height="340" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1614331970285" />
-    <state width="1228" height="340" key="GridCell.Tab.0.center" timestamp="1614331970285">
+    <state width="1228" height="372" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1614700911505" />
+    <state width="1228" height="372" key="GridCell.Tab.0.center" timestamp="1614700911504">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1228" height="340" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1614331970285" />
-    <state width="1228" height="340" key="GridCell.Tab.0.left" timestamp="1614331970284">
+    <state width="1228" height="372" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1614700911504" />
+    <state width="1228" height="372" key="GridCell.Tab.0.left" timestamp="1614700911504">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1228" height="340" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1614331970284" />
-    <state width="1228" height="340" key="GridCell.Tab.0.right" timestamp="1614331970285">
+    <state width="1228" height="372" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1614700911504" />
+    <state width="1228" height="372" key="GridCell.Tab.0.right" timestamp="1614700911504">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1228" height="340" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1614331970285" />
-    <state width="1228" height="340" key="GridCell.Tab.1.bottom" timestamp="1614331970176">
+    <state width="1228" height="372" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1614700911504" />
+    <state width="1228" height="372" key="GridCell.Tab.1.bottom" timestamp="1614700911505">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1228" height="340" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1614331970176" />
-    <state width="1228" height="340" key="GridCell.Tab.1.center" timestamp="1614331970176">
+    <state width="1228" height="372" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1614700911505" />
+    <state width="1228" height="372" key="GridCell.Tab.1.center" timestamp="1614700911505">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1228" height="340" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1614331970176" />
-    <state width="1228" height="340" key="GridCell.Tab.1.left" timestamp="1614331970176">
+    <state width="1228" height="372" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1614700911505" />
+    <state width="1228" height="372" key="GridCell.Tab.1.left" timestamp="1614700911505">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1228" height="340" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1614331970176" />
-    <state width="1228" height="340" key="GridCell.Tab.1.right" timestamp="1614331970176">
+    <state width="1228" height="372" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1614700911505" />
+    <state width="1228" height="372" key="GridCell.Tab.1.right" timestamp="1614700911505">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1228" height="340" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1614331970176" />
-    <state width="1228" height="340" key="GridCell.Tab.2.bottom" timestamp="1614331970176">
+    <state width="1228" height="372" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1614700911505" />
+    <state width="1228" height="372" key="GridCell.Tab.2.bottom" timestamp="1614700911505">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1228" height="340" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1614331970176" />
-    <state width="1228" height="340" key="GridCell.Tab.2.center" timestamp="1614331970176">
+    <state width="1228" height="372" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1614700911505" />
+    <state width="1228" height="372" key="GridCell.Tab.2.center" timestamp="1614700911505">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1228" height="340" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1614331970176" />
-    <state width="1228" height="340" key="GridCell.Tab.2.left" timestamp="1614331970176">
+    <state width="1228" height="372" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1614700911505" />
+    <state width="1228" height="372" key="GridCell.Tab.2.left" timestamp="1614700911505">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1228" height="340" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1614331970176" />
-    <state width="1228" height="340" key="GridCell.Tab.2.right" timestamp="1614331970176">
+    <state width="1228" height="372" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1614700911505" />
+    <state width="1228" height="372" key="GridCell.Tab.2.right" timestamp="1614700911505">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1228" height="340" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1614331970176" />
+    <state width="1228" height="372" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1614700911505" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1613900551094">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1613900551094" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1614313946168">
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1614729214085">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1614313946168" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1614729214085" />
     <state x="209" y="109" key="new project wizard" timestamp="1613573158406">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
